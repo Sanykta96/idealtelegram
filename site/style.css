@@ -1,14 +1,3 @@
-/* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
-
-/* basic elements */
 html {
 	margin: 0;
 	padding: 0;
@@ -17,8 +6,9 @@ body {
 	font: 75% georgia, sans-serif;
 	line-height: 1.88889;
 	color: #0a071d; 
-	background: #fff url(http://www.stevegreaves.com/images/wentworthSnow%20copy2.jpg) no-repeat bottom right; 
-	margin: 5; 
+	height: 500px;
+	background: url(spring.jpg) no-repeat center center fixed;
+	background-size: cover;
 	padding: 3;
 	}
 p { 
@@ -32,16 +22,18 @@ h3 {
 	color: #7D775C;
 	}
 a:link { 
+	font-style: oblique;
 	text-decoration: none; 
 	color: #0a071d;
 	}
 a:visited {  
 	text-decoration: none; 
-	color: #D4CDDC;
+	color: #0a071d;
 	}
 a:hover, a:focus, a:active { 
 	text-decoration: none; 
-	color: #fff;
+	font-weight: bold;
+	color: #0a071d;
 	}
 abbr {
 	border-bottom: none;
@@ -68,8 +60,10 @@ abbr {
 	height: 100px;
 }
 
+
 .button{
 	background-color: #4b72ff;
+	opacity: 0.9;
 	font-size: 20px;
 	text-decoration: none;
 	    padding-top: 5px;
@@ -85,8 +79,12 @@ abbr {
     margin-left: 0px;
     margin-top: 30px;
     position: relative;
-    box-shadow: inset -1px -2px 2px #44474a;
+    box-shadow: inset 1px -2px 2px #757171;
+}
 
+.button:hover{
+	box-shadow: -2px 2px 8px 2px #757171;
+	  text-shadow: -4px 2px #346392;
 }
 
 h1{ 
@@ -115,6 +113,11 @@ header {
         margin-left: -1px;
            float: left;
            border-top: 0px;
+}
+
+#subheader{
+	height: 22px;
+	background-color: #4b72ff;
 }
 
 .summary {
